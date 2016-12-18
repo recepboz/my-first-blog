@@ -4,7 +4,6 @@ from django.db import models
 from django.db import models
 from django.utils import timezone
 
-
 class Post(models.Model):
     yazar = models.ForeignKey('auth.User')
     baslik = models.CharField(max_length=200)
